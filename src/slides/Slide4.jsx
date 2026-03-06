@@ -41,7 +41,7 @@ export default function Slide4() {
       />
       <div className="absolute inset-0 bg-gradient-to-b from-[#050914]/80 via-transparent to-[#050914]/80" />
 
-      <div className="relative z-10 max-w-6xl w-full px-16 flex flex-col gap-8">
+      <div className="relative z-10 max-w-6xl w-full px-6 md:px-16 flex flex-col gap-6 md:gap-8 pt-24 pb-8 md:pt-0 md:pb-0">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-pink-500/10 border border-pink-500/25 text-pink-300">
             <Plug className="w-3 h-3" />
@@ -50,15 +50,15 @@ export default function Slide4() {
         </motion.div>
 
         <div>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }} className="font-space text-6xl font-bold text-white leading-none tracking-tight">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }} className="font-space text-4xl md:text-6xl font-bold text-white leading-none tracking-tight">
             The New
           </motion.h1>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.6 }} className="font-space text-6xl font-bold leading-none tracking-tight gradient-text-warm">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.6 }} className="font-space text-4xl md:text-6xl font-bold leading-none tracking-tight gradient-text-warm">
             AI Stack
           </motion.h1>
         </div>
 
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* MCP card */}
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.28, duration: 0.6 }} className="glass rounded-2xl p-6 flex flex-col gap-4 border border-pink-500/15">
             <div className="flex items-center gap-3">

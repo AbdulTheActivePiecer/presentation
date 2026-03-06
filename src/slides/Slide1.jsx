@@ -31,7 +31,7 @@ export default function Slide1() {
       <div className="absolute bottom-0 right-0 w-[600px] h-[600px] blob-cyan translate-x-1/3 translate-y-1/3" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl w-full px-16 flex flex-col gap-12">
+      <div className="relative z-10 max-w-6xl w-full px-6 md:px-16 flex flex-col gap-8 md:gap-12 pt-24 pb-8 md:pt-0 md:pb-0">
         {/* Top tag */}
         <motion.div {...fadeUp(0)}>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-violet-500/10 border border-violet-500/25 text-violet-300">
@@ -42,10 +42,10 @@ export default function Slide1() {
 
         {/* Headline */}
         <div className="flex flex-col gap-3">
-          <motion.h1 {...fadeUp(0.1)} className="font-space text-7xl font-bold text-white leading-none tracking-tight">
+          <motion.h1 {...fadeUp(0.1)} className="font-space text-5xl md:text-7xl font-bold text-white leading-none tracking-tight">
             The AI
           </motion.h1>
-          <motion.h1 {...fadeUp(0.18)} className="font-space text-7xl font-bold leading-none tracking-tight gradient-text">
+          <motion.h1 {...fadeUp(0.18)} className="font-space text-5xl md:text-7xl font-bold leading-none tracking-tight gradient-text">
             Explosion
           </motion.h1>
           <motion.p {...fadeUp(0.28)} className="text-lg text-white/50 mt-2 max-w-lg">
@@ -54,7 +54,7 @@ export default function Slide1() {
         </div>
 
         {/* Milestone timeline */}
-        <div className="flex gap-5">
+        <div className="flex flex-col sm:flex-row gap-4 md:gap-5">
           {milestones.map((m, i) => (
             <motion.div
               key={m.year}

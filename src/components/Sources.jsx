@@ -7,7 +7,7 @@ export default function Sources({ links }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 1, duration: 0.6 }}
-      className="fixed bottom-3 left-10 z-40 flex flex-col gap-1"
+      className="fixed bottom-3 left-10 z-40 hidden md:flex flex-col gap-1"
     >
       <p className="text-white/20 text-[10px] font-semibold tracking-widest uppercase mb-0.5">Sources</p>
       <div className="flex flex-wrap gap-1.5">

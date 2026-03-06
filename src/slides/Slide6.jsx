@@ -42,7 +42,7 @@ export default function Slide6() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl w-full px-16 flex flex-col gap-7">
+      <div className="relative z-10 max-w-6xl w-full px-6 md:px-16 flex flex-col gap-5 md:gap-7 pt-24 pb-8 md:pt-0 md:pb-0">
         {/* Header */}
         <div className="flex flex-col gap-4">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -52,21 +52,21 @@ export default function Slide6() {
             </span>
           </motion.div>
           <div className="flex gap-3 items-end">
-            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }} className="font-space text-5xl font-bold text-white leading-none tracking-tight">
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }} className="font-space text-3xl md:text-5xl font-bold text-white leading-none tracking-tight">
               Workflow
             </motion.h1>
-            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="font-space text-5xl font-bold text-white/20 leading-none">vs</motion.span>
-            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="font-space text-5xl font-bold leading-none tracking-tight gradient-text-warm">
+            <motion.span initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.15 }} className="font-space text-3xl md:text-5xl font-bold text-white/20 leading-none">vs</motion.span>
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="font-space text-3xl md:text-5xl font-bold leading-none tracking-tight gradient-text-warm">
               Agentic
             </motion.h1>
-            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="font-space text-5xl font-bold text-white leading-none tracking-tight">
+            <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="font-space text-3xl md:text-5xl font-bold text-white leading-none tracking-tight">
               Automation
             </motion.h1>
           </div>
         </div>
 
         {/* Two columns */}
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {/* Workflow column */}
           <motion.div
             initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.3, duration: 0.6 }}

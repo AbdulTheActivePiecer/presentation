@@ -70,7 +70,7 @@ export default function Slide5() {
       />
       <div className="absolute right-0 top-0 w-[40%] h-full bg-gradient-to-l from-transparent to-[#050914]" />
 
-      <div className="relative z-10 max-w-6xl w-full px-16 flex gap-16 items-center">
+      <div className="relative z-10 max-w-6xl w-full px-6 md:px-16 flex flex-col md:flex-row gap-8 md:gap-16 md:items-center pt-24 pb-8 md:pt-0 md:pb-0">
         {/* Left column */}
         <div className="flex flex-col gap-8 flex-1">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
@@ -83,13 +83,13 @@ export default function Slide5() {
           <div>
             <motion.h1
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }}
-              className="font-space text-6xl font-bold text-white leading-none tracking-tight"
+              className="font-space text-4xl md:text-6xl font-bold text-white leading-none tracking-tight"
             >
               AI in the
             </motion.h1>
             <motion.h1
               initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.6 }}
-              className="font-space text-6xl font-bold leading-none tracking-tight gradient-text-green"
+              className="font-space text-4xl md:text-6xl font-bold leading-none tracking-tight gradient-text-green"
             >
               Real World
             </motion.h1>
@@ -120,7 +120,7 @@ export default function Slide5() {
         </div>
 
         {/* Right column — sector bars */}
-        <div className="flex flex-col gap-5 w-72">
+        <div className="flex flex-col gap-5 w-full md:w-72">
           <div className="flex flex-col gap-0.5">
             <motion.p
               initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.3, duration: 0.6 }}

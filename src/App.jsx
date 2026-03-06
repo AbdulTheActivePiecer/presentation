@@ -27,6 +27,7 @@ const slideVariants = {
 
 export default function App() {
   const [[current, direction], setCurrent] = useState([0, 0])
+  const [touchStartX, setTouchStartX] = useState(null)
 
   const goTo = useCallback((next) => {
     if (next < 0 || next >= slides.length) return
@@ -48,7 +49,16 @@ export default function App() {
   const CurrentSlide = slides[current]
 
   return (
-    <div className="relative w-screen h-screen overflow-hidden bg-[#050914]">
+    <div
+      className="relative w-screen h-screen overflow-hidden bg-[#050914]"
+      onTouchStart={(e) => setTouchStartX(e.touches[0].clientX)}
+      onTouchEnd={(e) => {
+        if (touchStartX === null) return
+        const diff = touchStartX - e.changedTouches[0].clientX
+        if (Math.abs(diff) > 50) diff > 0 ? goNext() : goPrev()
+        setTouchStartX(null)
+      }}
+    >
       <AnimatePresence mode="wait" custom={direction}>
         <motion.div
           key={current}

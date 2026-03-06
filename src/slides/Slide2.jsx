@@ -69,7 +69,7 @@ export default function Slide2() {
       />
       <div className="absolute right-0 top-0 w-[38%] h-full bg-gradient-to-l from-transparent to-[#050914]" />
 
-      <div className="relative z-10 max-w-6xl w-full px-16 flex flex-col gap-8">
+      <div className="relative z-10 max-w-6xl w-full px-6 md:px-16 flex flex-col gap-5 md:gap-8 pt-24 pb-8 md:pt-0 md:pb-0">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase bg-violet-500/10 border border-violet-500/25 text-violet-300">
             <Brain className="w-3 h-3" />
@@ -78,10 +78,10 @@ export default function Slide2() {
         </motion.div>
 
         <div>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }} className="font-space text-6xl font-bold text-white leading-none tracking-tight">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.1, duration: 0.6 }} className="font-space text-4xl md:text-6xl font-bold text-white leading-none tracking-tight">
             Reasoning
           </motion.h1>
-          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.6 }} className="font-space text-6xl font-bold leading-none tracking-tight gradient-text">
+          <motion.h1 initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.18, duration: 0.6 }} className="font-space text-4xl md:text-6xl font-bold leading-none tracking-tight gradient-text">
             Models
           </motion.h1>
           <motion.p initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.28, duration: 0.6 }} className="text-white/45 text-base mt-3 max-w-lg">
@@ -133,7 +133,7 @@ export default function Slide2() {
                 <p className="text-2xl font-bold gradient-text">{m.score}</p>
                 <p className="text-white/40 text-[10px] font-semibold">AIME 2024</p>
               </div>
-              <div className="shrink-0 text-right w-24">
+              <div className="hidden sm:block shrink-0 text-right w-24">
                 <p className="text-white/40 text-xs">{m.cost}</p>
               </div>
             </motion.div>
